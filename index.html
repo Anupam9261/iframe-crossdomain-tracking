@@ -24,41 +24,17 @@
    
    <!-- Sample configurator Section -->
    <div class="w3-container" id="about">
-     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">This is a sample configurator</h3>
+     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">This is a sample configurator on a different domain</h3>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
        laboris nisi ut aliquip ex ea commodo consequat.
      </p>
-     <p><button class="w3-button w3-black w3-block" id="testCTA" onclick="testFunction()">Test CTA</button></p>
      <div class="w3-container" id="contact">
         <button class="w3-button w3-black w3-section" id="testCTA2" type="submit" onclick="testFunction2()"><i class="fa fa-paper-plane"></i>SEND MESSAGE</button>
      </div> 
    </div>
    
    <script>
-    function testFunction() {
-      parent.dataLayer.push({ ecommerce: null });
-      parent.dataLayer.push({
-       "event":  "add_to_cart",
-       "ecommerce":  {
-        "currency": "USD",
-        "value": 16,
-        "items": [{
-          "item_id": "b55da",
-          "item_name": "Flexigen T-Shirt",
-          "price": "16.00",
-          "quantity": 1,
-          "item_brand": "Flexigen",
-          "item_category": "T-Shirts",
-          "item_variant": "red",
-          "index": 0,
-          "size": "M",
-          "custom_random": Math.random()
-        }]
-      }
-     });
-    }
-
     function testFunction2() {    
      var postObject = {
         event: "add_to_cart",

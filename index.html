@@ -60,7 +60,7 @@
     }
 
     function testFunction2() {    
-     var postObject = JSON.stringify({
+     var postObject = {
         event: "add_to_cart",
         ecommerce: {
           currency: "USD",
@@ -89,8 +89,8 @@
           }
           ]
         }
-      }); 
-     parent.postMessage(postObject, 'https://anupam9261.github.io');
+      }; 
+     parent.postMessage(postObject, '*');
     }
    </script>
  </body>

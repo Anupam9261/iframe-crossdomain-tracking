@@ -46,6 +46,41 @@
    <!-- Sample configurator Section -->
    <div class="w3-container w3-cyan" id="about">
      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sample configurator on a different domain</h3>
+     <p>This page uses postMessage() API</p>
+      <code>function testFunction3() {    
+         var postObject = {
+            event: "add_to_cart",
+            ecommerce: {
+              currency: "USD",
+              value: 30.03,
+              items: [
+              {
+                item_id: "SKU_12345",
+                item_name: "Stan and Friends Tee",
+                affiliation: "Google Merchandise Store",
+                coupon: "SUMMER_FUN",
+                discount: 2.22,
+                index: 0,
+                item_brand: "Google",
+                item_category: "Apparel",
+                item_category2: "Adult",
+                item_category3: "Shirts",
+                item_category4: "Crew",
+                item_category5: "Short sleeve",
+                item_list_id: "related_products",
+                item_list_name: "Related Products",
+                item_variant: "green",
+                location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+                price: 10.01,
+                quantity: 3,
+                custom_random: Math.random()
+              }
+              ]
+            }
+          }; 
+         parent.postMessage(postObject, '*');
+        }
+      </code><br>
      <a href="cart.html" class="w3-button w3-black w3-section">Go to Cart Page</a>
      <button class="w3-button w3-black w3-section" id="testCTA2" type="submit" onclick="testFunction3()"><i class="fa fa-paper-plane"></i>Add to Cart</button>
    </div>

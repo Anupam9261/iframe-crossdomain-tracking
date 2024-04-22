@@ -1,96 +1,88 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
   <head>
-   <title>Sample Configurator on a different domain - Cart</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <style>body {background-color: white;}</style>
-
-   <!-- Google Tag Manager -->
-   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-PV67WTQF');</script>
-   <!-- End Google Tag Manager -->
-
-   <script>
+    <title>Sample Configurator on a different domain - Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PV67WTQF');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script>
     window.dataLayer.push({
-        "event": "page_view",
-        "business_divison": "sample_business_divison",
-        "business_unit": "sample_business_unit",
-        "configurator_id": "sample_configurator_id",
-        "configurator_name": "sample_configurator_name",
-        "digital_platform": "sample_digital_platform",
-        "digital_platform_country": "sample_digital_platform_country",
-        "environment": "sample_environment",
-        "page_category": "sample_page_category",
-        "page_language": "sample_page_language",
-        "page_sub_category": "sample_page_sub_category",
-        "page_sub_sub_category": "sample_",
-        "page_top_category": "sample_page_top_category",
-        "page_title": "sample_page_title",
-        "project_id": "sample_project_id",
-        "project_name": "sample_project_name",
-        "template": "sample_template"
+      "event": "page_view",
+      "business_divison": "sample_business_divison",
+      "business_unit": "sample_business_unit",
+      "configurator_id": "sample_configurator_id",
+      "configurator_name": "sample_configurator_name",
+      "digital_platform": "sample_digital_platform",
+      "digital_platform_country": "sample_digital_platform_country",
+      "environment": "sample_environment",
+      "page_category": "sample_page_category",
+      "page_language": "sample_page_language",
+      "page_sub_category": "sample_page_sub_category",
+      "page_sub_sub_category": "sample_",
+      "page_top_category": "sample_page_top_category",
+      "page_title": "sample_page_title",
+      "project_id": "sample_project_id",
+      "project_name": "sample_project_name",
+      "template": "sample_template"
     });
-   </script>
-   
+    </script>
   </head>
   <body>
-   <!-- Google Tag Manager (noscript) -->
-   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV67WTQF"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
-   <!-- Sample configurator Section -->
-   <div class="w3-container w3-blue" id="about">
-     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">This is a sample configurator on a different domain</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-       laboris nisi ut aliquip ex ea commodo consequat.
-     </p>
-     <div class="w3-container" id="contact">
-        <a href="index.html" class="w3-button w3-black w3-section">Home Page</a>
-        <button class="w3-button w3-black w3-section" id="testCTA2" type="submit" onclick="testFunction2()"><i class="fa fa-paper-plane"></i>Add to cart</button>
-     </div> 
-   </div>
-   
-   <script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV67WTQF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Sample configurator Section -->
+    <div class="w3-container w3-blue" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sample configurator on a different domain | Cart Page</h3>
+      <a href="index.html" class="w3-button w3-black w3-section">Home Page</a>
+      <button class="w3-button w3-black w3-section" id="testCTA2" type="submit" onclick="testFunction2()"><i class="fa fa-paper-plane"></i>Download BOM</button>
+    </div>
+    
+    <script>
     function testFunction2() {    
-     var postObject = {
+      var postObject = {
         event: "add_to_cart",
         ecommerce: {
           currency: "USD",
           value: 30.03,
           items: [
-          {
-            item_id: "SKU_12345",
-            item_name: "Stan and Friends Tee",
-            affiliation: "Google Merchandise Store",
-            coupon: "SUMMER_FUN",
-            discount: 2.22,
-            index: 0,
-            item_brand: "Google",
-            item_category: "Apparel",
-            item_category2: "Adult",
-            item_category3: "Shirts",
-            item_category4: "Crew",
-            item_category5: "Short sleeve",
-            item_list_id: "related_products",
-            item_list_name: "Related Products",
-            item_variant: "green",
-            location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-            price: 10.01,
-            quantity: 3,
-            custom_random: Math.random()
-          }
+            {
+              item_id: "SKU_12345",
+              item_name: "Stan and Friends Tee",
+              affiliation: "Google Merchandise Store",
+              coupon: "SUMMER_FUN",
+              discount: 2.22,
+              index: 0,
+              item_brand: "Google",
+              item_category: "Apparel",
+              item_category2: "Adult",
+              item_category3: "Shirts",
+              item_category4: "Crew",
+              item_category5: "Short sleeve",
+              item_list_id: "related_products",
+              item_list_name: "Related Products",
+              item_variant: "green",
+              location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+              price: 10.01,
+              quantity: 3,
+              custom_random: Math.random()
+            }
           ]
         }
       }; 
-     parent.postMessage(postObject, '*');
+      parent.postMessage(postObject, '*');
     }
-   </script>
- </body>
+    </script>
+  </body>
 </html>
